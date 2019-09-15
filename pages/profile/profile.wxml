@@ -1,0 +1,6 @@
+<view class="section">
+  <textarea class="textarea" placeholder="请输入您想看的影片" focus="{{focus}}" />
+  <view class="btn-area">
+    <button bindtap="bindButtonTap" size='mini'>提交</button>
+  </view>
+</view>

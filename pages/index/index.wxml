@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="page-header">
+  <text>{{title}}</text>
+  
+ </view>
+  <scroll-view class='page-body'  >
+    <navigator class="item-movie"  url="../movie/movie?id={{item.id}}" wx:for='{{movies}}' wx:key='index'>
+      <view class="item">
+        <image class="poster" src="{{item.images.small}}"></image>
+        <text class="rage">{{item.rating.average}}</text>
+        <view class="meta">
+          <text class="title">{{item.title}}</text>
+        </view>
+      </view> 
+    </navigator>
+  </scroll-view> 
+
+ 

@@ -1,0 +1,27 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page{
+  font-family: "Microsoft";
+  background: #fff;
+  display: flex;
+  flex-direction: column
+}
+.page-header{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 2rpx solid #aaa;
+  margin-bottom: 10rpx
+}
+.page-header text{
+  padding: 20rpx 40rpx;
+  color:#999
+}
