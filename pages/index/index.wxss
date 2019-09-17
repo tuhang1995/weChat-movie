@@ -1,0 +1,53 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+} 
+.page-header text{
+  text-align: center;
+  width: 100%
+}
+.page-body{ 
+  flex: 1;  
+}
+.item-movie{ 
+  width: 33.3vw;
+  display: inline-block
+}
+.item-movie image{
+  width:  100%
+}
+.item{
+  padding:10rpx 15rpx;
+  position: relative
+}
+.rage{
+  position: absolute;
+  bottom: 45px;
+  right: 30rpx;
+  color: red
+}
+.item .title{
+  width: 100%; 
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center
+}

@@ -1,0 +1,17 @@
+<view class="section tc">
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"  enable-danmu danmu-btn controls object-fit='fill' autoplay  enable-play-gesture='true'></video>
+  <cover-image class="playImg"  src="../../images/play.jpg" bindtap='videoTap' wx:if="{{play}}"></cover-image>
+</view>
+<scroll-view scroll-y="true">
+  <view class="meta">
+    <image class="poster" src="{{movie.images.large}}" background-size="cover"></image>
+    <text class="title">{{movie.title}}({{movie.year}})</text>
+    <text class="info">评分：{{movie.rating.average}}</text>
+    <text class="info">导演：<block wx:for="{{movie.directors}}"> {{item.name}} </block></text>
+    <text class="info">主演：<block wx:for="{{movie.casts}}"> {{item.name}} </block></text>
+  </view>
+  <view class="summary">
+    <text class="label">摘要：</text>
+    <text class="content">{{movie.summary}}</text>
+  </view>
+</scroll-view>
